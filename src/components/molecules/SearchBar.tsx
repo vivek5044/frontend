@@ -8,7 +8,7 @@ export const SearchBar: React.FC<Props> = ({ onSearch }) => {
   const [input, setInput] = useState('');
 
   const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
-    if ((e.key === 'Enter' || e.key === 'Return') && input.length >= 3) {
+    if ((e.key === 'Enter' || e.key === 'Return') && input.length>=3) {
       onSearch(input);
     }
   };
